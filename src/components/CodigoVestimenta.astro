@@ -1,4 +1,4 @@
----
+﻿---
 // CodigoVestimenta.astro
 ---
 
@@ -33,15 +33,15 @@
     >
         <!-- MARCO PRINCIPAL CON EFECTO GLASSMORPHISM -->
         <div
-            class="backdrop-blur-sm rounded-3xl border-2 border-[#0F3D2E]/25 p-8 shadow-sm relative overflow-hidden"
+            class="backdrop-blur-sm rounded-3xl border-2 border-[#5f682f]/25 p-8 shadow-sm relative overflow-hidden"
         >
             <!-- Brillo sutil animado en la esquina -->
             <div
-                class="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-[#0F3D2E]/10 to-transparent rounded-full blur-3xl animate-pulse-slow"
+                class="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-[#5f682f]/10 to-transparent rounded-full blur-3xl animate-pulse-slow"
             >
             </div>
             <div
-                class="absolute -bottom-20 -left-20 w-40 h-40 bg-gradient-to-tr from-[#0F3D2E]/8 to-transparent rounded-full blur-3xl animate-pulse-slow"
+                class="absolute -bottom-20 -left-20 w-40 h-40 bg-gradient-to-tr from-[#5f682f]/8 to-transparent rounded-full blur-3xl animate-pulse-slow"
                 style="animation-delay: 1s;"
             >
             </div>
@@ -52,7 +52,7 @@
                 <div class="flex justify-center mb-6">
                     <div class="w-16 h-16 relative vestimenta-icon-container">
                         <div
-                            class="absolute inset-0 bg-gradient-to-br from-[#9C7A2E]/20 to-[#9C7A2E]/5 rounded-full blur-xl animate-pulse-slow"
+                            class="absolute inset-0 bg-gradient-to-br from-[#9a7a54]/20 to-[#9a7a54]/5 rounded-full blur-xl animate-pulse-slow"
                         >
                         </div>
 
@@ -66,7 +66,7 @@
 
                 <!-- Título principal -->
                 <h3
-                    class="text-[#9C7A2E] tracking-[0.3em] uppercase text-lg md:text-2xl mb-3 relative inline-block"
+                    class="text-[#9a7a54] tracking-[0.3em] uppercase text-lg md:text-2xl mb-3 relative inline-block"
                 >
                     Código de Vestimenta
                 </h3>
@@ -74,22 +74,22 @@
                 <!-- Línea decorativa -->
                 <div class="flex items-center justify-center gap-2 mb-6">
                     <div
-                        class="w-12 h-px bg-gradient-to-r from-transparent to-[#0F3D2E]/30"
+                        class="w-12 h-px bg-gradient-to-r from-transparent to-[#5f682f]/30"
                     >
                     </div>
-                    <div class="w-2 h-2 rounded-full bg-[#0F3D2E]/40"></div>
+                    <div class="w-2 h-2 rounded-full bg-[#5f682f]/40"></div>
                     <div
-                        class="w-12 h-px bg-gradient-to-l from-transparent to-[#0F3D2E]/30"
+                        class="w-12 h-px bg-gradient-to-l from-transparent to-[#5f682f]/30"
                     >
                     </div>
                 </div>
 
                 <!-- FORMAL destacado -->
                 <div
-                    class="rounded-2xl py-4 px-6 mb-6 border border-[#0F3D2E]/10"
+                    class="rounded-2xl py-4 px-6 mb-6 border border-[#5f682f]/10"
                 >
                     <h4
-                        class="text-[#0F3D2E] tracking-[0.25em] uppercase text-lg md:text-2xl"
+                        class="text-[#5f682f] tracking-[0.25em] uppercase text-lg md:text-2xl"
                     >
                         Formal
                     </h4>
@@ -97,7 +97,7 @@
 
                 <!-- Texto descriptivo -->
                 <p
-                    class="font-charm text-[#0F3D2E] text-lg md:text-2xl lg:text-3xl leading-relaxed"
+                    class="font-charm text-[#5f682f] text-lg md:text-2xl lg:text-3xl leading-relaxed"
                 >
                     Queremos que disfrutes de esta celebración de gala
                 </p>
@@ -151,7 +151,7 @@
         position: absolute;
         width: 4px;
         height: 4px;
-        background: radial-gradient(circle, #9c7a2e 0%, transparent 70%);
+        background: radial-gradient(circle, #9a7a54 0%, transparent 70%);
         border-radius: 50%;
         animation: flotar 6s ease-in-out infinite;
         opacity: 0.4;
@@ -201,7 +201,7 @@
         }
     }
 
-    /* Filtro que convierte imágenes PNG negras al color #0F3D2E */
+    /* Filtro que convierte imágenes PNG negras al color #5f682f */
     .verde-filter {
         filter: brightness(0) saturate(100%) invert(18%) sepia(42%)
             saturate(525%) hue-rotate(115deg) brightness(78%) contrast(105%);

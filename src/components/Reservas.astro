@@ -1,4 +1,4 @@
----
+﻿---
 // NumeroPases.astro
 // Este componente muestra el número de pases asignados a cada invitado
 // Se puede configurar dinámicamente según el invitado
@@ -42,15 +42,15 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
     >
         <!-- MARCO PRINCIPAL CON EFECTO GLASSMORPHISM -->
         <div
-            class="backdrop-blur-sm rounded-3xl border-2 border-[#0F3D2E]/25 p-8 shadow-sm relative overflow-hidden"
+            class="backdrop-blur-sm rounded-3xl border-2 border-[#5f682f]/25 p-8 shadow-sm relative overflow-hidden"
         >
             <!-- Brillo sutil animado en la esquina -->
             <div
-                class="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-[#0F3D2E]/10 to-transparent rounded-full blur-3xl animate-pulse-slow"
+                class="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-[#5f682f]/10 to-transparent rounded-full blur-3xl animate-pulse-slow"
             >
             </div>
             <div
-                class="absolute -bottom-20 -left-20 w-40 h-40 bg-gradient-to-tr from-[#0F3D2E]/8 to-transparent rounded-full blur-3xl animate-pulse-slow"
+                class="absolute -bottom-20 -left-20 w-40 h-40 bg-gradient-to-tr from-[#5f682f]/8 to-transparent rounded-full blur-3xl animate-pulse-slow"
                 style="animation-delay: 1s;"
             >
             </div>
@@ -61,7 +61,7 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
                 <div class="flex justify-center mb-6">
                     <div class="w-16 h-16 relative pase-icon-container">
                         <div
-                            class="absolute inset-0 bg-gradient-to-br from-[#9C7A2E]/20 to-[#9C7A2E]/5 rounded-full blur-xl animate-pulse-slow"
+                            class="absolute inset-0 bg-gradient-to-br from-[#9a7a54]/20 to-[#9a7a54]/5 rounded-full blur-xl animate-pulse-slow"
                         >
                         </div>
                         <img
@@ -74,7 +74,7 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
 
                 <!-- Título principal -->
                 <h3
-                    class="text-[#9C7A2E] tracking-[0.3em] uppercase text-lg md:text-2xl mb-3 relative inline-block"
+                    class="text-[#9a7a54] tracking-[0.3em] uppercase text-lg md:text-2xl mb-3 relative inline-block"
                 >
                     Pases Asignados
                 </h3>
@@ -82,12 +82,12 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
                 <!-- Línea decorativa -->
                 <div class="flex items-center justify-center gap-2 mb-2">
                     <div
-                        class="w-12 h-px bg-gradient-to-r from-transparent to-[#0F3D2E]/30"
+                        class="w-12 h-px bg-gradient-to-r from-transparent to-[#5f682f]/30"
                     >
                     </div>
-                    <div class="w-2 h-2 rounded-full bg-[#0F3D2E]/40"></div>
+                    <div class="w-2 h-2 rounded-full bg-[#5f682f]/40"></div>
                     <div
-                        class="w-12 h-px bg-gradient-to-l from-transparent to-[#0F3D2E]/30"
+                        class="w-12 h-px bg-gradient-to-l from-transparent to-[#5f682f]/30"
                     >
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
                 <!-- Nombre del invitado (si se proporciona) -->
                 {
                     nombreInvitado && (
-                        <p class="font-charm text-[#0F3D2E] text-xl md:text-2xl mb-6">
+                        <p class="font-charm text-[#5f682f] text-xl md:text-2xl mb-6">
                             {nombreInvitado}
                         </p>
                     )
@@ -112,8 +112,8 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
                             <!-- Número grande y destacado -->
                             <div class="mb-3">
                                 <p
-                                    class="text-[#9C7A2E] text-5xl md:text-5xl font-bold leading-none numero-pases"
-                                    style="text-shadow: 0 4px 12px rgba(156, 122, 46, 0.2);"
+                                    class="text-[#9a7a54] text-5xl md:text-5xl font-bold leading-none numero-pases"
+                                    style="text-shadow: 0 4px 12px rgba(154, 122, 84, 0.2);"
                                 >
                                     {numeroPases}
                                 </p>
@@ -122,19 +122,19 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
                             <!-- Texto descriptivo debajo del número -->
                             <div class="space-y-1">
                                 <p
-                                    class="text-[#9C7A2E] tracking-[0.25em] uppercase text-base md:text-xl font-semibold"
+                                    class="text-[#9a7a54] tracking-[0.25em] uppercase text-base md:text-xl font-semibold"
                                 >
                                     {numeroPases === 1 ? "Pase" : "Pases"}
                                 </p>
                                 <div
                                     class="flex items-center justify-center gap-2 mt-2"
                                 >
-                                    <div class="w-8 h-px bg-[#9C7A2E]/30"></div>
+                                    <div class="w-8 h-px bg-[#9a7a54]/30"></div>
                                     <div
-                                        class="w-1.5 h-1.5 rounded-full bg-[#9C7A2E]/50"
+                                        class="w-1.5 h-1.5 rounded-full bg-[#9a7a54]/50"
                                     >
                                     </div>
-                                    <div class="w-8 h-px bg-[#9C7A2E]/30"></div>
+                                    <div class="w-8 h-px bg-[#9a7a54]/30"></div>
                                 </div>
                             </div>
                         </div>
@@ -142,14 +142,14 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
 
                     <!-- Sombra proyectada suave -->
                     <div
-                        class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[90%] h-4 bg-[#9C7A2E]/10 rounded-full blur-xl"
+                        class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[90%] h-4 bg-[#9a7a54]/10 rounded-full blur-xl"
                     >
                     </div>
                 </div>
 
                 <!-- Texto descriptivo -->
                 <p
-                    class="font-charm text-[#0F3D2E] text-lg md:text-2xl lg:text-3xl leading-relaxed mb-6"
+                    class="font-charm text-[#5f682f] text-lg md:text-2xl lg:text-3xl leading-relaxed mb-6"
                 >
                     {
                         numeroPases === 1
@@ -163,11 +163,11 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
                     {
                         Array.from({ length: numeroPases }).map((_, index) => (
                             <div
-                                class="w-9 h-9 rounded-full bg-gradient-to-br from-[#0F3D2E]/15 to-[#9C7A2E]/10 flex items-center justify-center person-icon border border-[#9C7A2E]/20"
+                                class="w-9 h-9 rounded-full bg-gradient-to-br from-[#5f682f]/15 to-[#9a7a54]/10 flex items-center justify-center person-icon border border-[#9a7a54]/20"
                                 style={`animation-delay: ${index * 0.2}s;`}
                             >
                                 <svg
-                                    class="w-5 h-5 text-[#9C7A2E]"
+                                    class="w-5 h-5 text-[#9a7a54]"
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                 >
@@ -225,7 +225,7 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
         position: absolute;
         width: 4px;
         height: 4px;
-        background: radial-gradient(circle, #9c7a2e 0%, transparent 70%);
+        background: radial-gradient(circle, #9a7a54 0%, transparent 70%);
         border-radius: 50%;
         animation: flotar 6s ease-in-out infinite;
         opacity: 0.4;
@@ -695,7 +695,7 @@ const { numeroPases = 1, nombreInvitado = "" } = Astro.props;
 <!-- 🎨 ESTILOS PARA CONVERTIR IMÁGENES NEGRAS A DORADO          -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 <style>
-    /* Filtro que convierte imágenes PNG negras al color dorado #9C7A2E */
+    /* Filtro que convierte imágenes PNG negras al color dorado #9a7a54 */
     .verde-filter {
         filter: brightness(0) saturate(100%) invert(18%) sepia(42%)
             saturate(525%) hue-rotate(115deg) brightness(78%) contrast(105%);

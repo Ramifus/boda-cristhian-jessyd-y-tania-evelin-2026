@@ -1,4 +1,4 @@
----
+﻿---
 // Calendario.astro
 ---
 
@@ -8,24 +8,24 @@
         <!-- TÍTULO -->
         <div class="text-center mb-4 opacity-0" id="cal-titulo">
             <div class="flex items-center justify-center gap-3 mb-2">
-                <div class="h-px w-10 bg-gradient-to-r from-transparent to-[#9C7A2E]"></div>
+                <div class="h-px w-10 bg-gradient-to-r from-transparent to-[#9a7a54]"></div>
                 <img
                     src="/iconos/Anillos.png"
                     alt="anillos"
                     class="w-5 h-5 object-contain"
                     style="filter: brightness(0) saturate(100%) invert(56%) sepia(77%) saturate(419%) hue-rotate(5deg) brightness(94%) contrast(92%);"
                 />
-                <div class="h-px w-10 bg-gradient-to-l from-transparent to-[#9C7A2E]"></div>
+                <div class="h-px w-10 bg-gradient-to-l from-transparent to-[#9a7a54]"></div>
             </div>
 
         </div>
 
         <!-- CALENDARIO -->
         <div class="opacity-0" id="cal-grid">
-            <div class="border-2 border-[#9C7A2E] rounded-2xl overflow-hidden shadow-md">
+            <div class="border-2 border-[#9a7a54] rounded-2xl overflow-hidden shadow-md">
 
                 <!-- Cabecera mes -->
-                <div class="bg-gradient-to-r from-[#C9A961] via-[#9C7A2E] to-[#C9A961] py-2 px-3 flex items-center justify-center gap-3">
+                <div class="bg-gradient-to-r from-[#939168] via-[#9a7a54] to-[#939168] py-2 px-3 flex items-center justify-center gap-3">
                     <div class="h-px flex-1 bg-white/30"></div>
                     <p class="font-charm text-white text-lg md:text-xl tracking-widest">
                         JUNIO · 2026
@@ -34,16 +34,16 @@
                 </div>
 
                 <!-- Días de la semana -->
-                <div class="grid grid-cols-7 bg-[#0F3D2E]/10">
+                <div class="grid grid-cols-7 bg-[#5f682f]/10">
                     {["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"].map((d, i) => (
-                        <div class={`py-1.5 text-center text-[10px] md:text-xs font-semibold tracking-wide ${i === 5 ? "text-[#9C7A2E]" : "text-[#0F3D2E]/60"}`}>
+                        <div class={`py-1.5 text-center text-[10px] md:text-xs font-semibold tracking-wide ${i === 5 ? "text-[#9a7a54]" : "text-[#5f682f]/60"}`}>
                             {d}
                         </div>
                     ))}
                 </div>
 
                 <!-- Separador -->
-                <div class="h-px bg-[#9C7A2E]/20"></div>
+                <div class="h-px bg-[#9a7a54]/20"></div>
 
                 <!-- Días del mes -->
                 <div class="grid grid-cols-7 bg-white/60">
@@ -51,12 +51,12 @@
                     {[1,2,3,4,5,6,7].map((d) => (
                         <div class={`
                             relative flex items-center justify-center py-2
-                            ${d === 6 ? "text-[#9C7A2E]" : ""}
+                            ${d === 6 ? "text-[#9a7a54]" : ""}
                             ${d === 13 ? "z-10" : ""}
                         `}>
                             <span class={`
                                 font-charm text-sm md:text-base
-                                ${d === 6 ? "text-[#9C7A2E] font-bold" : "text-[#0F3D2E]/70"}
+                                ${d === 6 ? "text-[#9a7a54] font-bold" : "text-[#5f682f]/70"}
                             `}>{d}</span>
                         </div>
                     ))}
@@ -70,14 +70,14 @@
                             {d === 13 ? (
                                 <div class="relative flex items-center justify-center">
                                     <!-- Aro exterior pulsante -->
-                                    <div class="absolute w-8 h-8 md:w-9 md:h-9 rounded-full border-2 border-[#9C7A2E]/40 animate-ping-cal"></div>
+                                    <div class="absolute w-8 h-8 md:w-9 md:h-9 rounded-full border-2 border-[#9a7a54]/40 animate-ping-cal"></div>
                                     <!-- Círculo dorado -->
-                                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-[#C9A961] to-[#9C7A2E] flex items-center justify-center shadow-lg shadow-[#9C7A2E]/30">
+                                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-[#939168] to-[#9a7a54] flex items-center justify-center shadow-lg shadow-[#9a7a54]/30">
                                         <span class="font-charm text-white text-sm md:text-base font-bold">13</span>
                                     </div>
                                 </div>
                             ) : (
-                                <span class={`font-charm text-sm md:text-base ${d === 13 ? "" : d === 14 ? "text-[#0F3D2E]/40" : "text-[#0F3D2E]/70"}`}>
+                                <span class={`font-charm text-sm md:text-base ${d === 13 ? "" : d === 14 ? "text-[#5f682f]/40" : "text-[#5f682f]/70"}`}>
                                     {d}
                                 </span>
                             )}
@@ -87,21 +87,21 @@
                     <!-- Semana 3: 15–21 -->
                     {[15,16,17,18,19,20,21].map((d) => (
                         <div class="relative flex items-center justify-center py-2">
-                            <span class={`font-charm text-sm md:text-base ${d === 20 ? "text-[#9C7A2E]" : "text-[#0F3D2E]/70"}`}>{d}</span>
+                            <span class={`font-charm text-sm md:text-base ${d === 20 ? "text-[#9a7a54]" : "text-[#5f682f]/70"}`}>{d}</span>
                         </div>
                     ))}
 
                     <!-- Semana 4: 22–28 -->
                     {[22,23,24,25,26,27,28].map((d) => (
                         <div class="relative flex items-center justify-center py-2">
-                            <span class={`font-charm text-sm md:text-base ${d === 27 ? "text-[#9C7A2E]" : "text-[#0F3D2E]/70"}`}>{d}</span>
+                            <span class={`font-charm text-sm md:text-base ${d === 27 ? "text-[#9a7a54]" : "text-[#5f682f]/70"}`}>{d}</span>
                         </div>
                     ))}
 
                     <!-- Semana 5: 29–30 + celdas vacías -->
                     {[29,30].map((d) => (
                         <div class="relative flex items-center justify-center py-2">
-                            <span class="font-charm text-sm md:text-base text-[#0F3D2E]/70">{d}</span>
+                            <span class="font-charm text-sm md:text-base text-[#5f682f]/70">{d}</span>
                         </div>
                     ))}
                     {[...Array(5)].map(() => (
