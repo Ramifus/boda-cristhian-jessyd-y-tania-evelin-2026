@@ -20,7 +20,7 @@
             <h3 class="text-[#9a7a54] tracking-[0.2em] uppercase text-xl md:text-2xl font-semibold mb-1">
                 Nuestra Fecha
             </h3>
-            <p class="font-charm text-[#5f682f] text-3xl md:text-4xl">
+            <p class="font-charm text-[#376b4c] text-3xl md:text-4xl">
                 Junio 2026
             </p>
         </div>
@@ -30,7 +30,7 @@
             <div class="border-2 border-[#9a7a54]/40 rounded-2xl overflow-hidden shadow-md">
 
                 <!-- Cabecera mes -->
-                <div class="bg-[#5f682f] py-3 px-4 flex items-center justify-center gap-3">
+                <div class="bg-[#376b4c] py-3 px-4 flex items-center justify-center gap-3">
                     <div class="h-px flex-1 bg-[#9a7a54]/40"></div>
                     <p class="font-charm text-[#939168] text-xl md:text-2xl tracking-widest">
                         JUNIO · 2026
@@ -39,9 +39,9 @@
                 </div>
 
                 <!-- Días de la semana -->
-                <div class="grid grid-cols-7 bg-[#5f682f]/10">
+                <div class="grid grid-cols-7 bg-[#376b4c]/10">
                     {["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"].map((d, i) => (
-                        <div class={`py-2 text-center text-xs md:text-sm font-semibold tracking-wide ${i === 5 ? "text-[#9a7a54]" : "text-[#5f682f]/60"}`}>
+                        <div class={`py-2 text-center text-xs md:text-sm font-semibold tracking-wide ${i === 5 ? "text-[#9a7a54]" : "text-[#376b4c]/60"}`}>
                             {d}
                         </div>
                     ))}
@@ -61,7 +61,7 @@
                         `}>
                             <span class={`
                                 font-charm text-base md:text-lg
-                                ${d === 6 ? "text-[#9a7a54] font-bold" : "text-[#5f682f]/70"}
+                                ${d === 6 ? "text-[#9a7a54] font-bold" : "text-[#376b4c]/70"}
                             `}>{d}</span>
                         </div>
                     ))}
@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                             ) : (
-                                <span class={`font-charm text-base md:text-lg ${d === 13 ? "" : d === 14 ? "text-[#5f682f]/40" : "text-[#5f682f]/70"}`}>
+                                <span class={`font-charm text-base md:text-lg ${d === 13 ? "" : d === 14 ? "text-[#376b4c]/40" : "text-[#376b4c]/70"}`}>
                                     {d}
                                 </span>
                             )}
@@ -92,21 +92,21 @@
                     <!-- Semana 3: 15–21 -->
                     {[15,16,17,18,19,20,21].map((d) => (
                         <div class="relative flex items-center justify-center py-2.5">
-                            <span class={`font-charm text-base md:text-lg ${d === 20 ? "text-[#9a7a54]" : "text-[#5f682f]/70"}`}>{d}</span>
+                            <span class={`font-charm text-base md:text-lg ${d === 20 ? "text-[#9a7a54]" : "text-[#376b4c]/70"}`}>{d}</span>
                         </div>
                     ))}
 
                     <!-- Semana 4: 22–28 -->
                     {[22,23,24,25,26,27,28].map((d) => (
                         <div class="relative flex items-center justify-center py-2.5">
-                            <span class={`font-charm text-base md:text-lg ${d === 27 ? "text-[#9a7a54]" : "text-[#5f682f]/70"}`}>{d}</span>
+                            <span class={`font-charm text-base md:text-lg ${d === 27 ? "text-[#9a7a54]" : "text-[#376b4c]/70"}`}>{d}</span>
                         </div>
                     ))}
 
                     <!-- Semana 5: 29–30 + celdas vacías -->
                     {[29,30].map((d) => (
                         <div class="relative flex items-center justify-center py-2.5">
-                            <span class="font-charm text-base md:text-lg text-[#5f682f]/70">{d}</span>
+                            <span class="font-charm text-base md:text-lg text-[#376b4c]/70">{d}</span>
                         </div>
                     ))}
                     {[...Array(5)].map(() => (
@@ -120,7 +120,7 @@
         <div class="opacity-0 mt-6 text-center" id="cal-fecha-texto">
             <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#9a7a54]/40 bg-white/50">
                 <div class="w-2 h-2 rounded-full bg-[#9a7a54]"></div>
-                <p class="font-charm text-[#5f682f] text-xl md:text-2xl">
+                <p class="font-charm text-[#376b4c] text-xl md:text-2xl">
                     Sábado <span class="text-[#9a7a54] font-bold">13 de junio</span> · 2026
                 </p>
                 <div class="w-2 h-2 rounded-full bg-[#9a7a54]"></div>
