@@ -2,36 +2,22 @@
 // src/components/Portada.astro - Portada elegante con hojas animadas y fondo texturizado
 ---
 
-<!-- CAPA BLANCA DE TRANSICIÓN — tapa el fondo del layout durante el fade -->
-<div
-    id="capa-blanca"
-    style="
-    position: fixed;
-    inset: 0;
-    background: #ffffff;
-    z-index: [9999];
-    opacity: 1;
-    pointer-events: none;
-"
->
-</div>
-
 <section
     class="fixed inset-0 w-full h-screen flex justify-center z-[10000]"
     id="portada-section"
-    style="background-color: #ffffff; background-image: url('/imagenes/BlancoTextura.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    style="background-color: #ffffff; background-image: url('/imagenes/BlancoTextura.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"
 >
     <div class="relative w-full max-w-[480px]">
         <!-- Decoración floral superior -->
         <div class="absolute top-0 left-0 right-0 h-32 overflow-hidden z-[8]">
-            <div id="flor-izq" class="absolute top-0 -left-5 w-36 h-36">
+            <div id="flor-izq" class="absolute top-0 -left-4 w-28 h-28">
                 <img
                     src="/imagenes/floriz.webp"
                     alt=""
                     class="w-full h-full object-contain"
                 />
             </div>
-            <div id="flor-der" class="absolute top-0 -right-5 w-36 h-36">
+            <div id="flor-der" class="absolute top-0 -right-4 w-28 h-28">
                 <img
                     src="/imagenes/florde.webp"
                     alt=""
@@ -44,13 +30,13 @@
         <img
             src="/imagenes/hojadorada.png"
             alt="hoja dorada izquierda"
-            class="absolute left-2 top-[42%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[5]"
+            class="absolute left-2 top-[47%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[5]"
             id="hoja-dorada-izq"
         />
         <img
             src="/imagenes/hojadorada.png"
             alt="hoja dorada derecha"
-            class="absolute right-2 top-[42%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[5] scale-x-[-1]"
+            class="absolute right-2 top-[47%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[5] scale-x-[-1]"
             id="hoja-dorada-der"
         />
 
@@ -58,132 +44,83 @@
         <img
             src="/imagenes/florlateral.png"
             alt="flor lateral izquierda"
-            class="absolute left-0 top-[41%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[6]"
+            class="absolute left-0 top-[46%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[6]"
             id="flor-lateral-izq"
         />
         <img
             src="/imagenes/florlateral.png"
             alt="flor lateral derecha"
-            class="absolute right-0 top-[41%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[6] scale-x-[-1]"
+            class="absolute right-0 top-[46%] w-18 h-18 md:w-28 md:h-28 pointer-events-none z-[6] scale-x-[-1]"
             id="flor-lateral-der"
         />
 
         <!-- Contenido principal -->
-        <div class="relative z-10 pt-24 pb-2 px-6">
+        <div class="relative z-10 pt-28 pb-2 px-6">
+            <!-- Título: ¡NOS CASAMOS! -->
             <h1
                 id="titulo"
-                class="text-xl font-serif text-[#9a7a54] text-center mb-4 tracking-[0.3em] font-bold uppercase"
+                class="text-2xl font-serif text-[#939168] text-center mb-8 tracking-[0.3em] font-bold uppercase"
             >
                 ¡Nos Casamos!
             </h1>
 
-            <div class="mb-3">
+            <!-- Nombres de los novios con separador -->
+            <div class="mb-8">
                 <div
                     id="nombre-fernando"
-                    class="text-4xl font-script text-[#376b4c] text-center mb-1"
+                    class="text-5xl font-script text-[#376b4c] text-center mb-2"
                 >
-                    Gabriel
+                    Cristhian Jessyd
                 </div>
 
-                <div class="flex items-center justify-center gap-4 py-1">
+                <!-- Separador elegante -->
+                <div class="flex items-center justify-center gap-4 py-3">
                     <div
                         id="linea-izq"
-                        class="h-px w-12 bg-gradient-to-r from-transparent to-[#9a7a54]"
+                        class="h-px w-16 bg-gradient-to-r from-transparent to-[#939168]"
                     >
                     </div>
                     <span
                         id="ampersand"
-                        class="text-2xl text-[#9a7a54] font-script">&</span
+                        class="text-3xl text-[#939168] font-script">&</span
                     >
                     <div
                         id="linea-der"
-                        class="h-px w-12 bg-gradient-to-l from-transparent to-[#9a7a54]"
+                        class="h-px w-16 bg-gradient-to-l from-transparent to-[#939168]"
                     >
                     </div>
                 </div>
 
                 <div
                     id="nombre-abigail"
-                    class="text-4xl font-script text-[#376b4c] text-center mt-1"
+                    class="text-5xl font-script text-[#376b4c] text-center mt-2"
                 >
-                    Liliana
+                    Tania Evelin
                 </div>
             </div>
 
-            <!-- TARJETA DEL INVITADO -->
-            <div id="tarjeta-invitado" class="relative mx-2 mb-4">
-                <!-- Rectángulo principal -->
-                <div
-                    class="relative border border-[#9a7a54]/50 bg-white/60 backdrop-blur-sm px-4 py-2.5"
-                >
-                    <!-- Esquinas decorativas -->
-                    <div
-                        class="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-[#9a7a54]"
-                    >
-                    </div>
-                    <div
-                        class="absolute -top-1 -right-1 w-4 h-4 border-t-2 border-r-2 border-[#9a7a54]"
-                    >
-                    </div>
-                    <div
-                        class="absolute -bottom-1 -left-1 w-4 h-4 border-b-2 border-l-2 border-[#9a7a54]"
-                    >
-                    </div>
-                    <div
-                        class="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-[#9a7a54]"
-                    >
-                    </div>
-
-                    <!-- Etiqueta superior -->
-                    <p
-                        class="text-[#9a7a54] text-sm tracking-[0.3em] uppercase text-center mb-1.5 font-serif"
-                    >
-                        — Para —
-                    </p>
-
-                    <!-- Nombre del invitado -->
-                    <p
-                        id="portada-nombre-invitado"
-                        class="font-charm text-[#376b4c] text-xl text-center leading-tight mb-1.5"
-                    >
-                        Juan Pérez
-                    </p>
-
-                    <!-- Separador -->
-                    <div class="flex items-center justify-center gap-2 mb-1.5">
-                        <div class="flex-1 h-px bg-[#9a7a54]/30"></div>
-                        <span class="text-[#9a7a54] text-sm">✦</span>
-                        <div class="flex-1 h-px bg-[#9a7a54]/30"></div>
-                    </div>
-
-                    <!-- Pase -->
-                    <p
-                        class="text-[#376b4c]/70 text-sm tracking-[0.2em] uppercase text-center mb-1 font-serif"
-                    >
-                        Pase válido para
-                    </p>
-                    <p
-                        id="portada-pase-invitado"
-                        class="font-charm text-[#376b4c] text-2xl text-center leading-tight font-semibold"
-                    >
-                        2 personas
-                    </p>
-                </div>
+            <!-- Fecha -->
+            <div id="fecha" class="text-center mb-8 font-serif text-[#376b4c]">
+                <p class="font-charm text-2xl tracking-wider">
+                    Sábado 13 de junio
+                </p>
             </div>
 
+            <!-- Sobre -->
             <div
                 id="sobre-container"
-                class="flex justify-center mb-4 cursor-pointer"
+                class="flex justify-center mb-6 cursor-pointer"
             >
                 <div class="relative">
                     <img
                         src="/imagenes/sobre.webp"
                         alt="Sobre de invitación"
-                        class="w-[310px] drop-shadow-lg"
+                        class="w-[280px] drop-shadow-lg"
                     />
                 </div>
             </div>
 
+            <!-- Texto instrucción -->
             <p
                 id="instruccion"
                 class="text-center text-[#376b4c] font-serif text-sm uppercase font-bold tracking-[0.2em] px-4"
@@ -209,11 +146,6 @@
         overflow: hidden !important;
         height: 100vh !important;
     }
-
-    /* La capa blanca tapa el fondo del layout siempre */
-    #capa-blanca {
-        transition: opacity 0.4s ease;
-    }
 </style>
 
 <script>
@@ -226,15 +158,15 @@
             document.body.classList.add("portada-activa");
 
             // ── Estado inicial ──────────────────────────────────────
-            gsap.set("#flor-izq", { x: -60, scale: 0.8 });
-            gsap.set("#flor-der", { x: 60, scale: 0.8 });
+            gsap.set("#flor-izq", { opacity: 0, x: -60, scale: 0.8 });
+            gsap.set("#flor-der", { opacity: 0, x: 60, scale: 0.8 });
             gsap.set("#titulo", { opacity: 0, y: -30, scale: 0.95 });
             gsap.set("#nombre-fernando", { opacity: 0, x: -40, scale: 0.9 });
             gsap.set("#nombre-abigail", { opacity: 0, x: 40, scale: 0.9 });
             gsap.set("#linea-izq", { scaleX: 0, transformOrigin: "right" });
             gsap.set("#linea-der", { scaleX: 0, transformOrigin: "left" });
             gsap.set("#ampersand", { opacity: 0, scale: 0, rotation: -180 });
-            gsap.set("#tarjeta-invitado", { opacity: 0, y: 20, scale: 0.97 });
+            gsap.set("#fecha", { opacity: 0, y: 20 });
             gsap.set("#sobre-container", { opacity: 0, y: 30, scale: 0.9 });
             gsap.set("#instruccion", { opacity: 0 });
             gsap.set("#hoja-dorada-izq", {
@@ -269,12 +201,24 @@
 
             tl.to(
                 "#flor-izq",
-                { x: 0, scale: 1, duration: 1.2, ease: "power2.out" },
+                {
+                    opacity: 1,
+                    x: 0,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "power2.out",
+                },
                 0,
             )
                 .to(
                     "#flor-der",
-                    { x: 0, scale: 1, duration: 1.2, ease: "power2.out" },
+                    {
+                        opacity: 1,
+                        x: 0,
+                        scale: 1,
+                        duration: 1.2,
+                        ease: "power2.out",
+                    },
                     0,
                 )
                 .to(
@@ -312,22 +256,22 @@
                 )
                 .to(
                     "#flor-lateral-izq",
-                    { opacity: 0.85, x: 0, duration: 1.2, ease: "power2.out" },
+                    { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" },
                     0.6,
                 )
                 .to(
                     "#flor-lateral-der",
-                    { opacity: 0.85, x: 0, duration: 1.2, ease: "power2.out" },
+                    { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" },
                     0.6,
                 )
                 .to(
                     "#hoja-dorada-izq",
-                    { opacity: 0.9, x: 0, duration: 1.2, ease: "power2.out" },
+                    { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" },
                     0.8,
                 )
                 .to(
                     "#hoja-dorada-der",
-                    { opacity: 0.9, x: 0, duration: 1.2, ease: "power2.out" },
+                    { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" },
                     0.8,
                 )
                 .to(
@@ -352,15 +296,9 @@
                     0.7,
                 )
                 .to(
-                    "#tarjeta-invitado",
-                    {
-                        opacity: 1,
-                        y: 0,
-                        scale: 1,
-                        duration: 0.9,
-                        ease: "power2.out",
-                    },
-                    1.5,
+                    "#fecha",
+                    { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
+                    1.2,
                 )
                 .to(
                     "#sobre-container",
@@ -494,10 +432,9 @@
 
             // ── Click en el sobre ───────────────────────────────────
             const portadaSection = document.getElementById("portada-section");
-            const capaBlanca = document.getElementById("capa-blanca");
 
             sobreContainer?.addEventListener("click", () => {
-                console.log("📨 Abriendo invitación...");
+                console.log("📨 Abriendo invitación y reproduciendo música...");
 
                 gsap.killTweensOf("#flor-izq");
                 gsap.killTweensOf("#flor-der");
@@ -506,13 +443,13 @@
                 gsap.killTweensOf("#hoja-dorada-izq");
                 gsap.killTweensOf("#hoja-dorada-der");
 
-                // Música
-                const audio = new Audio("/musica/melodia2.mp3");
+                const audio = new Audio("/musica/melodia.mp3");
                 audio.loop = true;
                 audio.volume = 0.5;
                 audio.play().catch((error) => {
                     console.log("❌ Error al reproducir audio:", error);
                 });
+
                 (window as any).audioGlobal = audio;
                 (window as any).estaReproduciendoGlobal = true;
 
@@ -527,7 +464,7 @@
                     .to(
                         [
                             "#instruccion",
-                            "#tarjeta-invitado",
+                            "#fecha",
                             "#nombre-abigail",
                             "#nombre-fernando",
                             "#ampersand",
@@ -581,17 +518,11 @@
                                 document.body.classList.remove(
                                     "portada-activa",
                                 );
-                                document.body.style.overflow = "auto";
+                                console.log("🔓 Scroll desbloqueado");
                             },
                             onComplete: () => {
                                 portadaSection?.remove();
-                                // Desvanecer la capa blanca suavemente
-                                gsap.to(capaBlanca, {
-                                    opacity: 0,
-                                    duration: 0.4,
-                                    ease: "power2.out",
-                                    onComplete: () => capaBlanca?.remove(),
-                                });
+                                console.log("✅ Portada eliminada del DOM");
                                 window.scrollTo({ top: 0, behavior: "smooth" });
                             },
                         },
@@ -599,7 +530,7 @@
                     );
             });
 
-            console.log("✨ Portada lista!");
+            console.log("✨ Sistema de portada elegante con hojas listo!");
         });
     }
 </script>
