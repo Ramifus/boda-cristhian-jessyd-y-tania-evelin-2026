@@ -146,7 +146,6 @@
                         id="portada-nombre-invitado"
                         class="font-charm text-[#376b4c] text-xl text-center leading-tight mb-1.5"
                     >
-                        Juan Pérez
                     </p>
 
                 </div>
@@ -203,6 +202,18 @@
     if (typeof window !== "undefined") {
         document.addEventListener("DOMContentLoaded", () => {
             console.log("✨ Iniciando animaciones elegantes de portada...");
+
+            // Leer nombre del invitado desde URL (?para=NombreInvitado)
+            const params = new URLSearchParams(window.location.search);
+            const nombreInvitado = params.get("para");
+            const elNombre = document.getElementById("portada-nombre-invitado");
+            const elTarjeta = document.getElementById("tarjeta-invitado");
+
+            if (nombreInvitado && elNombre) {
+                elNombre.textContent = nombreInvitado;
+            } else if (elTarjeta) {
+                elTarjeta.style.display = "none";
+            }
 
             document.body.classList.add("portada-activa");
 

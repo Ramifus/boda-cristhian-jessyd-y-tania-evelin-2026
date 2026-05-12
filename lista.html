@@ -1,0 +1,99 @@
+
+<style>
+  .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 1rem 0; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+  .card-header { padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; }
+  .badge { font-size: 11px; padding: 3px 10px; border-radius: 999px; font-weight: 500; }
+  .novia-h { background: #FBEAF0; } .novia-h .badge { background: #ED93B1; color: #4B1528; }
+  .novio-h { background: #E6F1FB; } .novio-h .badge { background: #85B7EB; color: #042C53; }
+  .card-title { font-size: 14px; font-weight: 500; }
+  .novia-h .card-title { color: #993556; }
+  .novio-h .card-title { color: #185FA5; }
+  table { width: 100%; border-collapse: collapse; }
+  tr { border-top: 0.5px solid var(--color-border-tertiary); }
+  td { padding: 7px 16px; font-size: 12.5px; color: var(--color-text-primary); }
+  td.num { color: var(--color-text-secondary); width: 28px; text-align: right; font-size: 11px; }
+  .total-row td { font-weight: 500; font-size: 12px; color: var(--color-text-secondary); background: var(--color-background-secondary); }
+  @media (max-width: 520px) { .wrap { grid-template-columns: 1fr; } }
+</style>
+<div class="wrap">
+  <div class="card">
+    <div class="card-header novia-h">
+      <span class="card-title">Lista de la novia</span>
+      <span class="badge">47 personas</span>
+    </div>
+    <table>
+      <tr><td class="num">1</td><td>Gerardo Mercado Garcia y Sra.</td></tr>
+      <tr><td class="num">2</td><td>Gerardo Mercado Flores</td></tr>
+      <tr><td class="num">3</td><td>Ruth Montero</td></tr>
+      <tr><td class="num">4</td><td>Idalina Mercado Flores e Hijo</td></tr>
+      <tr><td class="num">5</td><td>Miguel Saavedra Rico y Sra.</td></tr>
+      <tr><td class="num">6</td><td>Norka Saavedra Mercado y Hermana</td></tr>
+      <tr><td class="num">7</td><td>Kevin Saavedra Mercado y Sra.</td></tr>
+      <tr><td class="num">8</td><td>Miguel Camberos Salazar y Sra.</td></tr>
+      <tr><td class="num">9</td><td>Ariel Galvez Escobar y Sra.</td></tr>
+      <tr><td class="num">10</td><td>Irene Leonor Rocha Mamani</td></tr>
+      <tr><td class="num">11</td><td>Madai Julian Rocha</td></tr>
+      <tr><td class="num">12</td><td>Alexandro Arandia Balderrama</td></tr>
+      <tr><td class="num">13</td><td>Angelica Huayta Vda. de Julian</td></tr>
+      <tr><td class="num">14</td><td>Arturo Sanchez Rodriguez y Sra.</td></tr>
+      <tr><td class="num">15</td><td>Jorge Arturo Sanchez Rocha y Sra.</td></tr>
+      <tr><td class="num">16</td><td>Erwin Sanchez Rocha</td></tr>
+      <tr><td class="num">17</td><td>Mirian Julian Rocha e Hijo</td></tr>
+      <tr><td class="num">18</td><td>Carmen Rocha Mamani</td></tr>
+      <tr><td class="num">19</td><td>Matias Rodriguez Rocha</td></tr>
+      <tr><td class="num">20</td><td>Mayra Rodriguez Rocha</td></tr>
+      <tr><td class="num">21</td><td>Raquel Rocha Mamani e Hijos</td></tr>
+      <tr><td class="num">22</td><td>Felicidad Salas Velasco</td></tr>
+      <tr><td class="num">23</td><td>Erick Cardenas</td></tr>
+      <tr><td class="num">24</td><td>Cristhian Serrato y Acompañante</td></tr>
+      <tr><td class="num">25</td><td>Lorena Cuellar Mercado</td></tr>
+      <tr><td class="num">26</td><td>Edson Baya y Sra.</td></tr>
+      <tr><td class="num">27</td><td>Nilss Bascope Pacheco</td></tr>
+      <tr><td class="num">28</td><td>Roberto Almendras Camacho</td></tr>
+      <tr><td class="num">29</td><td>Luis F. Rocha Mamani y Sra.</td></tr>
+      <tr><td class="num">30</td><td>Jesminder Rocha y Hermano</td></tr>
+      <tr class="total-row"><td class="num"></td><td>Total: 47 personas</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-header novio-h">
+      <span class="card-title">Lista del novio</span>
+      <span class="badge">48 personas</span>
+    </div>
+    <table>
+      <tr><td class="num">1</td><td>Nelssy Cori Mollo</td></tr>
+      <tr><td class="num">2</td><td>Alexandra Marza Cori</td></tr>
+      <tr><td class="num">3</td><td>Teresa Gomez Rocabado</td></tr>
+      <tr><td class="num">4</td><td>Brizeyka Quinteros</td></tr>
+      <tr><td class="num">5</td><td>Freddy Cori Mollo y Sra.</td></tr>
+      <tr><td class="num">6</td><td>Valeria Cori Bequer</td></tr>
+      <tr><td class="num">7</td><td>Ricardo Cori Mollo y Sra.</td></tr>
+      <tr><td class="num">8</td><td>Henry Cori Avila y Sra.</td></tr>
+      <tr><td class="num">9</td><td>Martha Cori Mollo y Acompañante</td></tr>
+      <tr><td class="num">10</td><td>Celeste Salazar Cori y Flia.</td></tr>
+      <tr><td class="num">11</td><td>Juan Salazar Cori y Esposa</td></tr>
+      <tr><td class="num">12</td><td>Marcello Mollo Burgoa y Sra.</td></tr>
+      <tr><td class="num">13</td><td>Samael Salazar Cori y Sra.</td></tr>
+      <tr><td class="num">14</td><td>Maria Isabel Cori</td></tr>
+      <tr><td class="num">15</td><td>Marcelo Delgadillo y Sra.</td></tr>
+      <tr><td class="num">16</td><td>Victor Cortez y Sra.</td></tr>
+      <tr><td class="num">17</td><td>Amilcar y Sra.</td></tr>
+      <tr><td class="num">18</td><td>Sebastian Rocha y Sra.</td></tr>
+      <tr><td class="num">19</td><td>Sergio Cossio Riverin</td></tr>
+      <tr><td class="num">20</td><td>Litzi Orellana</td></tr>
+      <tr><td class="num">21</td><td>Brenda Acha</td></tr>
+      <tr><td class="num">22</td><td>Marlene Mollo y Acompañante</td></tr>
+      <tr><td class="num">23</td><td>Martin Quiroz Rocha</td></tr>
+      <tr><td class="num">24</td><td>Javier Leonardi y Sra.</td></tr>
+      <tr><td class="num">25</td><td>Nelson Cuaquira y Sra.</td></tr>
+      <tr><td class="num">26</td><td>Brigitte Riverin</td></tr>
+      <tr><td class="num">27</td><td>Hugo Silva y Sra.</td></tr>
+      <tr><td class="num">28</td><td>Elizabeth Amaya y Acompañante</td></tr>
+      <tr><td class="num">29</td><td>Ruben Cardozo y Acompañante</td></tr>
+      <tr><td class="num">30</td><td>Sebastian Abanto</td></tr>
+      <tr class="total-row"><td class="num"></td><td>Total: 48 personas</td></tr>
+    </table>
+  </div>
+</div>
